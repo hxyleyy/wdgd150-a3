@@ -17,10 +17,10 @@ let cat = {
 // Cat Illustration
 function drawCat(x, y) {
     if (document.body.classList.contains("night-mode")) {
-      ctx.strokeStyle = "#f8f7d1"; // Pale yellow for night mode
+      ctx.strokeStyle = "#f8f7d1"; 
       ctx.fillStyle = "#f8f7d1";
   } else {
-      ctx.strokeStyle = "#314ffe"; // Blue for day mode
+      ctx.strokeStyle = "#314ffe"; 
       ctx.fillStyle = "#314ffe";
   }
 
@@ -173,9 +173,9 @@ function drawCat(x, y) {
 
     // Wheels
       if (document.body.classList.contains("night-mode")) {
-        ctx.fillStyle = "#000059"; // Dark blue for night mode
+        ctx.fillStyle = "#000059";
     } else {
-        ctx.fillStyle = "#f8f7d1"; // Pale yellow for day mode
+        ctx.fillStyle = "#f8f7d1"; 
     }
 
     // Left Wheel
@@ -226,7 +226,7 @@ slowDown.addEventListener("click", () => cat.speed = Math.max(1, cat.speed - 2))
 resetButton.addEventListener("click", () => {
   cat.x = 50;
   cat.moving = false;
-  playButton.textContent = "▶️";
+  playButton.textContent = "▶";
 });
 
 // Site starts in day mode
